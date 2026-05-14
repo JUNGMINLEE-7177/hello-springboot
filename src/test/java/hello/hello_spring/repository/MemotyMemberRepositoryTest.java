@@ -23,12 +23,13 @@ public class MemotyMemberRepositoryTest {
         Member member = new Member();
         member.setName("spring");
 
-        //when
+        //when  
         repository.save(member);
 
         //then
-        Member result = repository.findById(member.getId()).get();
+        Member result = repository.findById(member.getId()).get();  //Optional에서 값을 빼낼 때 get()사용
         assertThat(result).isEqualTo(member);
+        //Assertion.assertEquals(member, result);
     }
 
     @Test
