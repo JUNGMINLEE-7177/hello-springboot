@@ -1,4 +1,4 @@
-package hello.hello_spring.service;
+package hello.hello_spring;
 
 import hello.hello_spring.repository.MemberRepository;
 import hello.hello_spring.repository.MemoryMemberRepository;
