@@ -22,8 +22,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web' // webmvc에서 web으로 변경
 
 	// 수업자료에 나온 JDBC 및 H2 데이터베이스 필수 라이브러리 [cite: 48]
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+//	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	runtimeOnly 'com.h2database:h2'
+
 
 	// 테스트 통합 라이브러리 하나로 변경
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
